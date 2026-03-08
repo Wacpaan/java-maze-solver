@@ -1,13 +1,13 @@
 package com.maze;
+import com.maze.entity.Maze;
+import com.maze.renderer.MazeRenderer;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        Maze maze = new Maze(15 ,15);
+        MazeRenderer renderer = new MazeRenderer();
+        renderer.render(maze);
     }
 }
