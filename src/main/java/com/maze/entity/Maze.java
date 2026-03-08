@@ -8,8 +8,10 @@ public class Maze {
         this.mazeWidth = mazeWidth;
     }
 
+    //Gettery
+
     public int getMazeHeight() { return mazeHeight; }
 
-    public int getMazeWidth() {return mazeWidth;}
+    public int getMazeWidth() {return mazeWidth; }
 
 }
