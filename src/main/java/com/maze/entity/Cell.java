@@ -1,14 +1,14 @@
 package com.maze.entity;
 
 public class Cell {
-    private boolean wallTop = true;
+    private  boolean wallTop = true;
     private boolean wallBottom = true;
     private boolean wallLeft = true;
     private boolean wallRight = true;
 
     private boolean visited = false;
 
-    public boolean getWallTop() {return wallTop; }
+    public  boolean getWallTop() {return wallTop; }
     public void setWallTop(boolean wallTop) { this.wallTop = wallTop;}
 
     public boolean getWallBottom() {return wallBottom;}

@@ -2,7 +2,7 @@ package com.maze.entity;
 
 public class Maze {
     private int mazeHeight, mazeWidth;
-    Cell[][] grid;
+    private Cell[][] grid;
 
     public Maze(int mazeHeight, int mazeWidth){
         this.mazeHeight = mazeHeight;

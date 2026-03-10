@@ -6,7 +6,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        Maze maze = new Maze(15 ,15);
+        Maze maze = new Maze(5,5);
         MazeRenderer renderer = new MazeRenderer();
         renderer.render(maze);
     }
