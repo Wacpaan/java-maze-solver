@@ -2,16 +2,16 @@ package com.maze.entity;
 
 public class Maze {
     private int mazeHeight, mazeWidth;
-    char[][] grid;
+    Cell[][] grid;
 
     public Maze(int mazeHeight, int mazeWidth){
         this.mazeHeight = mazeHeight;
         this.mazeWidth = mazeWidth;
-        this.grid = new char[mazeHeight][mazeWidth];
+        this.grid = new Cell[mazeHeight][mazeWidth];
 
     for(int x = 0; x < mazeHeight; x++){
         for(int y = 0; y < mazeWidth; y++){
-        grid[x][y] = '#';
+        grid[x][y] = new Cell();
         }
     }
 
@@ -23,5 +23,5 @@ public class Maze {
 
     public int getMazeWidth() {return mazeWidth; }
 
-    public char[][] getGrid() { return grid; }
+    public Cell[][] getGrid() { return grid; }
 }
