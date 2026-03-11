@@ -30,7 +30,9 @@ public class MazeGenerator {
             int newCol = col + dc[i];
 
             if(newRow >= 0 && newRow < maze.getMazeHeight() && newCol >= 0 && newCol < maze.getMazeWidth() && !maze.getGrid()[newRow][newCol].isVisited()){
-
+               Cell wall = maze.getGrid()[row + dr[i]/2][col + dc[i]/2];
+               wall.setWall(false);
+               carve(maze, newRow, newCol);
             }
         }
     }
