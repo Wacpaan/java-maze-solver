@@ -5,8 +5,15 @@ public class Cell {
     private boolean wallBottom = true;
     private boolean wallLeft = true;
     private boolean wallRight = true;
-
     private boolean visited = false;
+
+    
+    private boolean isWall = true;
+
+
+
+    public boolean getWall() {return isWall;}
+    public void setWall(boolean isWall) {this.isWall = isWall;}
 
     public  boolean getWallTop() {return wallTop; }
     public void setWallTop(boolean wallTop) { this.wallTop = wallTop;}
