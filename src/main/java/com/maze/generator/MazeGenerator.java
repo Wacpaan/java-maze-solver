@@ -9,7 +9,7 @@ import com.maze.entity.Maze;
 public class MazeGenerator {
 
     public void generator(Maze maze){
-        carve(maze, 0, 0);
+        carve(maze, 1, 1);
 
     }
 
@@ -28,8 +28,8 @@ public class MazeGenerator {
         for(int i : kierunki){
             int newRow = row + dr[i];
             int newCol = col + dc[i];
-
-            if(newRow >= 0 && newRow < maze.getMazeHeight() && newCol >= 0 && newCol < maze.getMazeWidth() && !maze.getGrid()[newRow][newCol].isVisited()){
+            // 
+            if(newRow > 0 && newRow < maze.getMazeHeight() - 1 && newCol > 0 && newCol < maze.getMazeWidth() - 1 && !maze.getGrid()[newRow][newCol].isVisited()){
                Cell wall = maze.getGrid()[row + dr[i]/2][col + dc[i]/2];
                wall.setWall(false);
                carve(maze, newRow, newCol);

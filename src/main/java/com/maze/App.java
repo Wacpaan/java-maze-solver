@@ -7,7 +7,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        Maze maze = new Maze(50,50);
+        Maze maze = new Maze(25,25);
         MazeRenderer renderer = new MazeRenderer();
         MazeGenerator generator = new MazeGenerator();
         generator.generator(maze);
