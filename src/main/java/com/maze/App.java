@@ -13,6 +13,7 @@ public class App
         MazeGenerator generator = new MazeGenerator();
         MazeSolver solver = new MazeSolver();
         generator.generator(maze);
+        maze.resetVisited();
         solver.solver(maze);
         renderer.render(maze);
     }
