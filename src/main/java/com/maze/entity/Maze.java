@@ -1,5 +1,4 @@
 package com.maze.entity;
-
 public class Maze {
     private int mazeHeight, mazeWidth;
     private Cell[][] grid;
@@ -14,6 +13,13 @@ public class Maze {
         grid[x][y] = new Cell();
         }
     }
+    }
+    public void resetVisited(){
+      for(int i = 0; i < mazeHeight; i++){
+        for(int j = 0; j < mazeWidth; j ++){
+          grid[i][j].setVisited(false);
+        }
+      }
 
     }
 
