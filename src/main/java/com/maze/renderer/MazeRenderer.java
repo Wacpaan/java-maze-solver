@@ -15,6 +15,7 @@ public class MazeRenderer {
             for(int y = 0; y < maze.getMazeWidth(); y++){
                 Cell cell = maze.getGrid()[x][y];
                 if(cell.getWall()){ System.out.print("#"); }
+                else if(cell.isPath()){ System.out.print("*");}
                 else { System.out.print(" "); }
             }
             System.out.println();
