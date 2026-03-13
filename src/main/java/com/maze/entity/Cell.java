@@ -1,20 +1,21 @@
 package com.maze.entity;
 
 public class Cell {
+  /*
     private  boolean wallTop = true;
     private boolean wallBottom = true;
     private boolean wallLeft = true;
     private boolean wallRight = true;
+  */
     private boolean visited = false;
-
+    private boolean path = false;
     
     private boolean isWall = true;
 
-
-
+  
     public boolean getWall() {return isWall;}
     public void setWall(boolean isWall) {this.isWall = isWall;}
-
+  /*
     public  boolean getWallTop() {return wallTop; }
     public void setWallTop(boolean wallTop) { this.wallTop = wallTop;}
 
@@ -27,6 +28,11 @@ public class Cell {
     public boolean getWallRight() { return wallRight; }
     public void setWallRight(boolean wallRight) { this.wallRight = wallRight; }
 
+  */
+
     public boolean isVisited() {return visited; }
-    public void setVisited( boolean visited ) { this.visited = visited;}
+    public void setVisited( boolean visited ) { this.visited = visited; }
+
+    public boolean isPath() {return path;}
+    public void setPath( boolean path ) { this.path = path; }
 }
