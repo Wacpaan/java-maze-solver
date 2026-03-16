@@ -16,8 +16,16 @@ public class App
         System.out.println("-----------------------");
         System.out.print("Which size of grid you want?: ");
         int gridSize = scan.nextInt();
+        scan.close();
 
-        // Main program 
+        // gridSize need to be odd
+        
+        if (gridSize % 2 == 0){
+          gridSize++;
+          System.out.println("Adjusted grid size to " + gridSize + " to ensure perfect maze")
+        }
+
+        // Main program
 
         Maze maze = new Maze(gridSize,gridSize);
         MazeRenderer renderer = new MazeRenderer();
