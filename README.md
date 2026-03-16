@@ -20,7 +20,28 @@ A professional Java-based application designed to generate complex mazes and sol
 
 1. **Prerequisites:** Make sure you have [JDK 17](https://www.oracle.com/java/technologies/downloads/) or newer installed.
 2. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/Wacpaan/maze-algorithm-solver.git](https://github.com/Wacpaan/maze-algorithm-solver.git)
+  ```bash
+  git clone https://github.com/Wacpaan/maze-algorithm-solver.git
+  ```
+3. **Navigate to the project directory:** 
+  ```bash 
+  cd maze-algorithm-solver
+  ```
+4. **Compile and run: ** 
+  ```bash
+  javac src/main/java/com/maze/App.java
+  java src/main/java/com/maze/App
+  ```
+## Preview
+```console
+  #######
+  #*#   #
+  #*# # #
+  #***# #
+  ###*# #
+  #  ***#
+  #######
+```
+## Author
 
-
+- Konrad Gudowski (Wacpaan) - Main Developer
