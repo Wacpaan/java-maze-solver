@@ -1,6 +1,6 @@
 # Maze Algorithm Solver & Generator
 
-A professional Java-based application designed to generate complex mazes and solve them using efficient pathfinding algorithms. This project was developed as part of an engineering thesis to demonstrate algorithmic logic and data structure implementation.
+A professional Java-based application designed to generate complex mazes and solve them using efficient pathfinding algorithms.
 
 ## Features 
 

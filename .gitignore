@@ -1,0 +1,8 @@
+# Build artifacts
+target/
+out/
+bin/
+
+# Compiled Java class files
+*.class
+
