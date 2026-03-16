@@ -22,7 +22,7 @@ public class App
         
         if (gridSize % 2 == 0){
           gridSize++;
-          System.out.println("Adjusted grid size to " + gridSize + " to ensure perfect maze")
+          System.out.println("Adjusted grid size to " + gridSize + " to ensure perfect maze");
         }
 
         // Main program
@@ -30,7 +30,7 @@ public class App
         Maze maze = new Maze(gridSize,gridSize);
         MazeRenderer renderer = new MazeRenderer();
         MazeGenerator generator = new MazeGenerator();
-        MazeSolver solver = new MazeSolver();
+        DfsSolver solver = new DfsSolver();
         generator.generator(maze);
         renderer.render(maze);
         maze.resetVisited();
