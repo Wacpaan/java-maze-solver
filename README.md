@@ -27,7 +27,7 @@ A professional Java-based application designed to generate complex mazes and sol
   ```bash 
   cd maze-algorithm-solver
   ```
-4. **Compile and run: ** 
+4. **Compile and run:** 
   ```bash
   javac src/main/java/com/maze/App.java
   java src/main/java/com/maze/App
